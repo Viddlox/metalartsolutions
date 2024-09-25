@@ -1,7 +1,7 @@
 "use client";
 
 import { Quicksand, Dancing_Script } from "next/font/google";
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from './Services.module.css';
 
 const quicksand = Quicksand({ subsets: ["latin"], weight: ["400", "700"] });

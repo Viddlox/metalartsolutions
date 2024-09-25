@@ -1,11 +1,11 @@
+"use client"
+
 import Carousel from "./components/Carousel/Carousel";
 import Trivia from "./components/Trivia/Trivia";
 import Catalog from "./components/Catalog/Catalog";
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
 import { Divider } from "@nextui-org/react";
-
-export const runtime = "edge";
 
 export default function Home() {
   return (
