@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
 import { Divider } from "@nextui-org/react";
 
-export const runtime="experimental-edge"
+export const runtime = "edge";
 
 export default function Home() {
   return (
