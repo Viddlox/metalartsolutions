@@ -1,0 +1,103 @@
+/* Swiper container */
+.mySwiper {
+  height: auto; /* Set swiper height to auto to prevent excess space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center swiper */
+  overflow: hidden; /* Ensure no content exceeds the swiper's boundaries */
+}
+
+/* Flex container for text and swiper */
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 24rem;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Swiper adjustments */
+.swiper {
+  margin: 0 auto; /* Center swiper */
+  width: 100%;
+  height: auto; /* Allow height to adapt */
+  background-color: transparent; /* Ensure no background color */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.swiper-wrapper {
+  display: flex; /* Ensure the slides are in a row */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Auto height to avoid unnecessary extra space */
+  width: 100%; /* Ensure slides take full width */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto; /* Auto height to fit the container */
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  object-fit: contain; /* Ensure the whole image is visible */
+}
+
+/* Fixed image height */
+.fixedImage {
+  width: 100%;
+  height: auto; /* Auto height to fit the container */
+  max-height: 100vh; /* Prevent image from exceeding the viewport height */
+  object-fit: contain;
+  margin-top: 40px;
+}
+
+/* Custom pagination color */
+.mySwiper {
+  --swiper-pagination-color: white;
+}
+
+/* Portrait mode adjustments */
+@media (max-width: 1024px) {
+  .mySwiper {
+    height: auto; /* Let swiper adapt to content */
+    max-height: 70vh; /* Limit the swiper's max height */
+  }
+
+  .fixedImage {
+    height: auto;
+    max-height: 70vh; /* Prevent image from exceeding the swiper container */
+    object-fit: contain;
+  }
+}
+
+/* For larger screens (PC or tablet landscape) */
+@media (min-width: 1024px) {
+  .swiper-slide {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .fixedImage {
+    height: auto;
+    object-fit: contain;
+    max-height: 500px;
+    margin-top: 0px;
+  }
+}
+
+.slideIn {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.slideOut {
+  transform: translateX(-20%);
+  opacity: 0;
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
