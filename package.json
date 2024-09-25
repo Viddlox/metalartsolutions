@@ -6,7 +6,8 @@
     "dev": "next dev -H 192.168.100.13",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.6",
@@ -20,6 +21,7 @@
     "swiper": "^11.1.14"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.3",
     "@types/react": "^18.3.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",

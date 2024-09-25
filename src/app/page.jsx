@@ -5,6 +5,8 @@ import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
 import { Divider } from "@nextui-org/react";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <main className="min-h-screen w-full max-w-full overflow-hidden bg-gradient-radial from-black via-stone-950 to-stone-900">
